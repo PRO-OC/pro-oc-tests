@@ -1,7 +1,7 @@
 # pro-oc-test
 
 
-Musí obsahovat: Dockerfile, puppeteer, nahrání rozšíření: začít s pro-oc
-
-
-TODO: použít nějaký tool na smysluplný výstup do console (PASSES / FAILED v javascriptu)
+Dockerfile
+jasmina (link https://www.testim.io/blog/puppeteer-testing-introduction/)
+puppeteer + nahrání rozšířeních (začít s pro-oc)
+vygenerovat si klikani muzu pomoci 
