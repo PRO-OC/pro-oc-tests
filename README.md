@@ -7,4 +7,4 @@ jasmina (link https://www.testim.io/blog/puppeteer-testing-introduction/)
 
 puppeteer + nahrání rozšířeních (začít s pro-oc)
 
-vygenerovat si klikani muzu pomoci 
+vygenerovat si klikani muzu pomoci  https://github.com/checkly/headless-recorder
