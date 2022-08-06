@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+
+  vzp-point-proxy:
+    build: ./../pro-oc-vzp-point-proxy/ #TODO: when will finished link github: https://github.com/PRO-OC/pro-oc-vzp-point-proxy.git
+    ports:
+      - ${VZP_POINT_PROXY_PORT}:${VZP_POINT_PROXY_PORT}
+    environment:
+      PORT: ${VZP_POINT_PROXY_PORT}
+      ENCRYPT_KEY: ${ENCRYPT_KEY}
+    command: "npm start"
+    secrets:
+      - cert
+      - cert_pass
+      - googlechromepolicy
+
+secrets:
+  cert:
+    file: ./../pro-oc-vfn-secrets/cert.pem
+  googlechromepolicy:
+    file: ./../pro-oc-vfn-secrets/googlechromepolicy.json
+  cert_pass:
+    file: ./../pro-oc-vfn-secrets/certpassphrase.txt
