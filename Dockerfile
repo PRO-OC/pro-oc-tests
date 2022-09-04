@@ -10,12 +10,12 @@ RUN apt-get install -yq git
 # TODO: clone repository
 
 # browser-extensions
-RUN git clone https://github.com/PRO-OC/pro-oc.git
-#RUN git clone https://github.com/PRO-OC/pro-oc-vzp-b2b.git
-#RUN git clone https://github.com/PRO-OC/pro-oc-vzp-point.git
-#RUN git clone https://github.com/PRO-OC/pro-oc-dzs.git
-#RUN git clone https://github.com/PRO-OC/pro-oc-ag.git
-#RUN git clone https://github.com/PRO-OC/pro-oc-pcr.git
+RUN git clone --depth=1 https://github.com/PRO-OC/pro-oc.git
+#RUN git clone --depth=1 https://github.com/PRO-OC/pro-oc-vzp-b2b.git
+#RUN git clone --depth=1 https://github.com/PRO-OC/pro-oc-vzp-point.git
+#RUN git clone --depth=1 https://github.com/PRO-OC/pro-oc-dzs.git
+#RUN git clone --depth=1 https://github.com/PRO-OC/pro-oc-ag.git
+#RUN git clone --depth=1 https://github.com/PRO-OC/pro-oc-pcr.git
 
 COPY . .
 
